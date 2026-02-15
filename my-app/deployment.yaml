@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: my-nodejs
-        image: ramkumar1999/my-nodejs:latest
+        image: ramkumar1999/my-nodejs:33
         ports:
         - containerPort: 5006
