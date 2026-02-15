@@ -1,22 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: my-nodejs-deployment
   labels:
-    app: nginx
+    app: my-nodejs
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: nginx
+      app: my-nodejs
   template:
     metadata:
       labels:
-        app: nginx
+        app: my-nodejs
     spec:
       containers:
-      - name: nginx
-        image: nginx:1.14.2
+      - name: my-nodejs
+        image: ramkumar1999/my-nodejs
         ports:
-        - containerPort: 80
-
+        - containerPort: 5006
